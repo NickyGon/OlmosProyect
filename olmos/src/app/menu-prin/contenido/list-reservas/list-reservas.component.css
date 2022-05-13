@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.container{
+    height: max-content;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #fce6d7;
+}
+
+.reserva-list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.reserva-list-hor{
+    padding: 10px;
+}
+
+.card{
+    background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	overflow: hidden;
+	width: 700px;
+    margin-bottom: 10px;
+}
+
+.usuario{
+    background-color: #14342B;
+    color: #ffffff;
+    padding: 7px;
+    width: 900px;
+}
+
+.usuario-inf{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card h1{
+    font-family: 'Muli';
+    font-weight: bold;
+    letter-spacing: 1px;
+	margin: 10px 10px;
+}
+
+.card h6{
+    opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.card h3{
+    font-family: 'Josefin Slab', serif;
+    opacity: 0.6;
+	margin: 0px 10px;
+	letter-spacing: 1px;
+}
+
+.habitacion{
+    padding: 7px;
+	position: relative;
+	width: 100%;
+}
+
+input[type="checkbox"] {
+  accent-color: aquamarine;
+  color:#AAEEE7;
+  font-family: 'Muli';
+}
+
+label{
+    font-family: 'Muli';
+    opacity: 0.6;
+}
+
+::ng-deep .mat-select-content{
+    background-color: #AAEEE7;
+}
+
+
+.btn {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 10px;
+	padding: 10px;
+    margin-right: 10px;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+    left:10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.btn2 {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 10px;
+	padding: 10px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    opacity: 1;
+}
+
+.option{
+    padding-top: 20px;
+}
+
+.boton-hab{
+	position: relative;
+	width: 100%;
+    display: flex;
+    margin-right: 10px;
+}

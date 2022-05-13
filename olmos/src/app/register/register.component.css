@@ -1,0 +1,85 @@
+.main{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .main h1{
+    font-family: 'Muli';
+    font-weight: bold;
+    font-size: xx-large;
+    letter-spacing: 1px;
+	margin: 10px 10px;
+  }
+
+  .form{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #EDC9AF;
+  }
+
+  .form-fill{
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #fce6d7;
+  }
+
+ mat-form-field{
+     width: 400px;
+  }
+  
+  .icon-big{
+    width: 250px;
+    height: auto;
+    margin-bottom: 3em;
+  }
+
+  
+
+  .center{
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      padding: 10px;
+  }
+
+  .center a{
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .btn {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.example-half-width {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+    width: 48%;
+    margin-right: 8px;
+    font-family: "Josefin Slab",serif;
+    font-weight: bolder;
+}
+
+

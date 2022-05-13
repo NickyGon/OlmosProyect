@@ -1,0 +1,23 @@
+
+
+<div class="centered-content">
+  <div class="container">
+    <mat-tab-group  animationDuration="500ms" mat-stretch-tabs>
+      <mat-tab label="Reservas">
+        <ng-template matTabContent>
+          <app-list-reservas></app-list-reservas>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Habitaciones">
+        <ng-template matTabContent>
+          <app-list-habitaciones></app-list-habitaciones>
+        </ng-template>
+      </mat-tab>
+      <mat-tab *ngIf="false" label="Usuarios" >
+        <ng-template matTabContent>
+          <app-list-reservas></app-list-reservas>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

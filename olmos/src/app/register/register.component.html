@@ -1,0 +1,57 @@
+<div class="main">
+    <div class="form">
+        <h1>Registrate en el Sistema de Olmos</h1>
+        <div class="form-fill">
+            <form (submit)="onLogin(registerForm)" #registerForm="ngForm">
+                <mat-form-field appearance="outline" class="example-half-width">
+                  <input matInput name="nombre" ngModel type="text" placeholder="Nombre" #nombreInput="ngModel" required>
+                  <mat-error *ngIf="nombreInput.invalid">Ingresar un nombre válido.</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="example-half-width">
+                    <input matInput name="apellidos" ngModel type="text" placeholder="Apellidos" #apellidosInput="ngModel" required>
+                    <mat-error *ngIf="apellidosInput.invalid">Ingresar apellidos válidos.</mat-error>
+                  </mat-form-field>
+                <mat-form-field appearance="outline" class="example-half-width">
+                    <input matInput name="ci" ngModel type="text" placeholder="Carnet de Identidad" #ciInput="ngModel" required>
+                    <mat-error *ngIf="ciInput.invalid">Ingresar un CI válido.</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="example-half-width">
+                    <input matInput name="email" ngModel type="email" email placeholder="Correo electrónico" #emailInput="ngModel" required>
+                    <mat-error *ngIf="emailInput.invalid">Ingresar un e-mail válido.</mat-error>
+                </mat-form-field>
+
+                <p>    
+                <mat-form-field appearance="outline" class="example-half-width">
+                  <input [type]="hide ? 'password' : 'text'" name="password" ngModel matInput placeholder="Contraseña" #passwordInput="ngModel" required>
+                  <mat-icon matSuffix (click)="hide=!hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="passwordInput.invalid">Ingresar una contraseña valida.</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="example-half-width">
+                    <input [type]="hide2 ? 'password' : 'text'" name="password2" ngModel matInput placeholder="Repetir Contraseña" #password2Input="ngModel" required>
+                    <mat-icon matSuffix (click)="hide2=!hide2">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    <mat-error *ngIf="password2Input.invalid">Ingresar una contraseña valida.</mat-error>
+                  </mat-form-field>
+                  <hr>
+                  <div class="center">
+                    <mat-form-field appearance="outline" class="example-half-width">
+                        <input [type]="hide3 ? 'password' : 'text'" name="keyrole" ngModel matInput placeholder="Clave especial del hotel (no obligatorio)" #keyroleInput="ngModel">
+                        <mat-icon matSuffix (click)="hide3=!hide3">{{hide3 ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </mat-form-field>
+                  </div>
+                <p>
+                    <div class="center">
+                        <a routerLink="/" >¿Tienes cuenta? ¡Inicia sesión!</a>
+                    </div>
+                <p>
+                    <div class="center">
+                        <button mat-raised-button class="btn" type="submit" >Registrate</button>
+                    </div>
+
+                    
+                
+            </form>
+        </div>
+       
+    </div>
+   
+</div>

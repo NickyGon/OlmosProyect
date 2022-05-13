@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.main{
+    width: 700px;
+    max-width: 700px;
+    height: 100%;
+    padding: 10px;
+    margin: 0  !important;
+    background-color: #fce6d7;
+}
+
+.title{
+    padding: 25px !important;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #EDC9AF;
+}
+
+.title h1{
+    font-family: 'Muli';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.divider{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 15px;
+    border: 1px solid #245245;
+}
+
+.carousel-container img{
+    display: none;
+    border-radius: 15px;
+}
+
+.carousel-container img.image-active{
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+
+.carousel-dot-container{
+    position: relative;
+    bottom: -1;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #AAEEE7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.3;
+
+}
+
+.active, .dot:hover{
+    opacity: 1;
+}
+
+.estado{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-content:  center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.estado h2{
+    margin-right: 19px;
+    font-family: 'Josefin Slab',serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.label-dis{
+    background-color: #AAEEE7;;
+	border: 0 !important;
+	border-radius: 80px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: large;
+    padding:10px;
+	position: relative;
+    height: fit-content;
+}
+.photos{
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #14342B;
+}
+.info{
+    padding: 10px;
+    padding-top: 30px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #ffffff;
+    height:auto;
+}
+
+.info h3{
+    margin: 0px 10px;
+	letter-spacing: 1px;
+    font-family: 'Josefin Slab',serif;
+    font-weight: bolder;
+    margin-top: 0!important;
+    color: #14342B;
+    opacity: 0.6;
+}
+
+.info-r1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn2 {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 10px;
+	padding: 10px;
+	position: relative;
+    margin-top: 20px;
+    bottom: 10px;
+    left:30px;
+	letter-spacing: 1px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    opacity: 1;
+}

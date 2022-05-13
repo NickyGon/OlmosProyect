@@ -1,0 +1,34 @@
+<mat-drawer-container class="example-container" autosize [hasBackdrop]="true" (backdropClick)="toggleButton()">
+    <mat-drawer #drawer class="example-sidenav" mode="over" (keydown.escape)="toggleButton()">
+      <div class="top">
+        <span class="example-spacer"></span>
+        <button *ngIf="!showing" type="button" (click)="drawer.close(); showing=true" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" >
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="links">
+        <a mat-button (click)="setRoute('menu-prin'); drawer.toggle() ; showing=true">Menu principal</a>
+  
+      </div>
+      <span class="example-spacer"></span>
+  
+      <a mat-button (click)="onLogout()">Cerrar Sesion</a>
+  
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar>
+        <button *ngIf="showing" type="button" (click)="drawer.toggle(); showing=false" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+         <mat-icon>menu</mat-icon>
+       </button>
+       <span class="example-spacer"></span>
+      </mat-toolbar>
+      <div *ngIf="headRoute=='menu-prin'">
+        <app-menu-prin></app-menu-prin>
+      </div>
+      <div *ngIf="headRoute=='habitacion-card'">
+        <app-menu-prin></app-menu-prin>
+      </div>
+
+    </mat-drawer-content>
+  
+  </mat-drawer-container>

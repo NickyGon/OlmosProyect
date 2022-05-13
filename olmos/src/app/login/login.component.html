@@ -1,0 +1,32 @@
+<div class="main">
+    <div class="form">
+        <img class="icon-big" src="assets/white.jpg" alt="icon-big">
+        <h1>Bienvenido al Sistema de Olmos</h1>
+        <div class="form-fill">
+            <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
+                <mat-form-field appearance="outline">
+                  <input matInput name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email>
+                  <mat-error *ngIf="emailInput.invalid">Ingresar un E-mail valido.</mat-error>
+                </mat-form-field>
+                <p>
+                <mat-form-field appearance="outline">
+                  <input [type]="hide ? 'password' : 'text'" name="password" ngModel matInput placeholder="Contraseña" #passwordInput="ngModel" required>
+                  <mat-icon matSuffix (click)="hide=!hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  <mat-error *ngIf="passwordInput.invalid">Ingresar una contraseña valida.</mat-error>
+                </mat-form-field>
+                <p>
+                    <div class="center">
+                        <a routerLink="/register">¿Sin cuenta? ¡Registrate!</a>
+                    </div>
+                <p>
+                    <div class="center">
+                        <button mat-raised-button class="btn" type="submit" >Iniciar Sesion</button>
+                    </div>
+                
+                    
+            </form>
+        </div>
+       
+    </div>
+   
+</div>

@@ -1,0 +1,150 @@
+.main{
+    width: 400px;
+    max-width: 400px;
+    height: fit-content;
+    padding: 10px;
+    margin: 0  !important;
+    background-color: #fce6d7;
+}
+
+.tit-div{
+    display: flex;
+    flex-direction: row;
+    background-color: #EDC9AF;
+}
+
+.title{
+    padding: 25px !important;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.title h1{
+    font-family: 'Muli';
+    font-size: 40px;
+    font-weight: bold;
+    color: #14342B;
+}
+
+.form{
+    width: 100%;
+    height: fit-content;
+    align-content: center;
+    background-color: #14342B;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.example-full-width {
+    background-color: #AAEEE7;
+    width: 90%;
+    border-radius: 10px;
+    margin-right:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: "Josefin Slab",serif;
+    font-weight: bolder;
+}
+
+.example-half-width {
+    background-color: #AAEEE7;
+    width: 43%;
+    margin-right:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: "Josefin Slab",serif;
+    font-weight: bolder;
+}
+
+.foto{
+    background-color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.usuario-pago{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+  
+}
+
+.mat-toolbar-single-row {
+    height: auto !important;
+    background: transparent;
+    padding: 0;
+  }
+.mat-toolbar-single-row button {
+    width: 100px;
+}
+
+  #fileInput {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+  } 
+.foto h2{
+    font-family: "Josefin Slab",serif;
+    text-align: center;
+    font-weight: 900;
+    opacity: 0.6;
+}
+
+.btn {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 10px;
+	padding: 10px;
+	position: relative;
+    left:10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+
+.btn2 {
+	background-color: #AAEEE7;
+	border: 0;
+	border-radius: 50px;
+    font-family: 'Muli';
+	color: #14342B;
+    font-weight: bold;
+	font-size: 25px;
+	padding: 10px;
+	position: relative;
+    left:10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    opacity: 1;
+}
+
+.mat-dialog-actions{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}

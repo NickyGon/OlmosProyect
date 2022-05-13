@@ -1,0 +1,72 @@
+<div class="main">
+    <div class="tit-div">
+        <div class="title">
+            <h1>Editar Habitación</h1>         
+        </div>
+    </div>
+    <div class="form">
+        <form (ngSubmit)="createHabitacion(postForm)" #postForm="ngForm">
+            <mat-dialog-content class="mat-typography">
+                <mat-form-field appearance="outline" class="example-full-width" >
+                    <mat-label for="nombrehab">Nombre de la habitación: </mat-label>
+                    <input matInput required name="nombrehab" type="text" ngModel #nombrehab="ngModel">
+                    <mat-error *ngIf="nombrehab.invalid">Ingresar un nombre valido.</mat-error>
+                </mat-form-field>
+        
+                  <mat-form-field appearance="outline" class="example-full-width">
+                    <mat-label>Categoría</mat-label>
+                    <mat-select name="categoria" matInput required type="text" ngModel #categoria>
+                      <mat-option value="Monoambiente">Monoambiente</mat-option>
+                      <mat-option value="Doble ambiente">Doble ambiente</mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="categoria.errorState">Valor requerido</mat-error>
+                  </mat-form-field>
+                  <p>
+        
+                  <mat-form-field appearance="outline" class="example-half-width">
+                    <mat-label for="piso">Piso: </mat-label>
+                    <span matPrefix>Piso: </span>
+                    <input matInput required type="number" placeholder="Ej: 1" min="1" max="3" ngModel #piso="ngModel" name="piso">
+                    <mat-icon matSuffix>domain</mat-icon>
+                    <mat-error *ngIf="piso.invalid">Ingresar un numero de piso valido</mat-error>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="example-half-width">
+                      <mat-label>Bloque</mat-label>
+                      <span matPrefix>Bloque: </span>
+                      <mat-select name="bloque" matInput required type="text" ngModel #bloque>
+                        <mat-option value="A">A</mat-option>
+                        <mat-option value="B">B</mat-option>
+                      </mat-select>
+                      <mat-icon matSuffix>location_city</mat-icon>
+                      <mat-error *ngIf="bloque.errorState">Valor requerido</mat-error>
+                  </mat-form-field>
+    
+      
+                <div class="foto">
+                    <div class="foto-pan">
+                        <h2>Foto: </h2>
+                        <div class="usuario-pago">
+                            <mat-toolbar>
+                                <input />
+                                <button
+                                class="btn"
+                                  color="primary">
+                                  Subir imagen
+                                </button>
+                            </mat-toolbar>
+                            <input
+                              type="file"
+                              id="fileInput"
+                              name="fileInput"
+                              accept="image/*" />          
+                        </div>
+                    </div>
+                </div> 
+                
+            </mat-dialog-content>
+        </form>  
+    </div>
+    <mat-dialog-actions>
+        <button type="submit" class="btn2" mat-raised-button mat-dialog-close>Registrar Habitacion</button>
+      </mat-dialog-actions>
+</div>

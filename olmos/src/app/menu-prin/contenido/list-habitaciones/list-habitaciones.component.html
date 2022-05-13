@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="habita-list">
+        <div class="habita-list-hor">
+            <div class="card" *ngFor="let number of [0,1,2,3,4]">
+                <div class="habitacion">
+                    <div class="hab-layout">
+                        <img class="thumbnail-image" src="" onerror="this.src='assets/images/solidIm.png'"  alt="alternative" />
+                        <div class="hab-layout2">
+                            <h1>Habitación 1B</h1>   
+                            <h3>Capacidad: 6 personas</h3>   
+                            <h3>Categoría: Monobloque</h3>   
+                        </div>        
+                        <div class="hab-layout3">
+                            <div class="label-dis">
+                                Disponible
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-hab">
+                    <button type="button" (click)="openDialogEdit()" class="btn"><mat-icon>edit</mat-icon></button>
+                    <button type="button"(click)="openDialogDelete()" class="btn"><mat-icon>delete</mat-icon></button>
+                    <button type="button" (click)="openDialog()" class="btn"><mat-icon>exit_to_app</mat-icon></button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>

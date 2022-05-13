@@ -1,0 +1,25 @@
+.container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2em 4em;  
+  }
+  
+  #but {
+    margin: 0.5em 0;
+    width: 200px;
+    height: 100px;
+    font-size: large;
+    background-color: #137f41;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100% !important;
+    height: fit-content;
+    background: rgb(211,175,55);
+    background: linear-gradient(180deg, rgba(211,175,55,1) 0%, rgba(255,223,0,1) 82%, rgba(255,255,255,1) 100%); 
+  }

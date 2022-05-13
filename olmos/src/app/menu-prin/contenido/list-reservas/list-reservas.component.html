@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="reserva-list">
+        <div class="reserva-list-hor">
+            <div class="card" *ngFor="let number of [1,2,3,4,5]">
+                <div class="usuario">
+                    <h1>Góngora Nicole</h1>
+                    <div class="usuario-inf">
+                        <h6>11110692 L.P.</h6>
+                        <h6>nikita27111@hotmail.com</h6>
+                    </div>
+                    <div class="usuario-inf">
+                        <label><input type="checkbox" disabled="true"/>Reserva pagada</label>
+                        <mat-form-field appearance="fill"  style="background-color: #AAEEE7; font-size: 12px; border-radius: 20px;">
+                            <mat-label>Invitados</mat-label>
+                            <mat-select>
+                                <mat-option></mat-option>
+                                <mat-option>Option</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="option">
+                        <button type="button" (click)="openDialogRes()" class="btn">Revisar reserva</button>
+                        <button type="button" (click)="openDialogEdit()" class="btn"><mat-icon>edit</mat-icon></button>
+                        <button type="button"(click)="openDialogDelete()" class="btn"><mat-icon>delete</mat-icon></button>
+                    </div>
+                    
+                </div>
+                <div class="habitacion">
+                    <h1>Habitación 1B</h1>
+                    <h3>Capacidad: 6 personas</h3>
+                    <h3>Categoría: Monobloque</h3>
+                    <button type="button" (click)="openDialogHab()" class="btn2">Revisar Habitación</button>
+                </div>
+    
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
